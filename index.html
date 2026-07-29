@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">Sudoku</h1>
+        
+        <div id="sudoku-board" class="board">
+            <!-- JavaScript will generate the 81 cells here -->
+        </div>
+
+        <div class="number-pad" id="number-pad">
+            <!-- Numbers 1-9 generated dynamically by JS -->
+            <button class="num-btn erase-btn" id="btn-erase">⌫ Erase</button>
+        </div>
+    </div>
+
+    <!-- Preload ensures sounds are ready immediately. Add these MP3s to your 'sounds' folder -->
+    <audio id="sound-select" src="sounds/select.mp3" preload="auto"></audio>
+    <audio id="sound-place" src="sounds/place.mp3" preload="auto"></audio>
+    <audio id="sound-error" src="sounds/error.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
